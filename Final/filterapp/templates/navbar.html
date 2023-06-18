@@ -1,0 +1,13 @@
+
+<nav class="navbar navbar-expand-lg bg-black"> 
+    <div class="container-fluid">
+        <a class="navbar-brand rounded p-2 btn btn-outline-secondary text-white font-weight-bold" href="{% url 'home' %}"  style="color: #fff; background-color: #000; border-color: #000; " >Home</a>
+            {% if view != 'login' and view != 'register' %}
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link nav-logoff" href="{% url 'logout' %}">Log Off</a>
+                </li>
+            </ul>
+            {% endif %}
+    </div>
+</nav>

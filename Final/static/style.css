@@ -1,0 +1,268 @@
+
+p, h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.navbar.bg-black {
+    background-color: #000;
+}
+
+.navbar-brand {
+    color: #fff;
+}
+
+.navbar-brand:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+
+.nav-logoff {
+    color: #000;
+    font-weight: bold;
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: #fff;
+}
+
+.nav-logoff:hover {
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+}
+
+
+.header {
+    text-align: center;
+    padding: 20px;
+}
+
+.header h1 {
+    font-size: 72px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+
+.infotext  {
+    color: #888888;
+    font-weight: medium;
+    font-size: 24px;
+    text-align: center;
+    padding: 20px;
+}
+
+
+@media (max-width: 576px) {
+    .header h1 {
+        font-size: 32px;
+    }
+    .infotext{
+        font-size: 12px;
+    }
+}
+
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.search-input {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 50px;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, border 0.3s ease;
+    margin-right: 10px; 
+
+}
+
+.search-input:focus {
+    outline: none;
+    border: 2.5px solid #000;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.search-input:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.results-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px; 
+    background-image: linear-gradient(45deg, rgba(204, 204, 204, 0.2) 25%, transparent 25%, transparent 50%, rgba(204, 204, 204, 0.2) 50%, rgba(204, 204, 204, 0.2) 75%, transparent 75%, transparent);
+    background-size: 20px 20px; 
+}
+
+.results-container p {
+    position: relative;
+    z-index: 1;
+    font-size: 24px;
+    color: #17575E;
+}
+
+
+
+
+@media (max-device-width: 576px) {
+    .header h1 {
+        font-size: 32px;
+    }
+    .infotext {
+        font-size: 12px;
+    }
+    .search-input {
+        max-width: 250px;
+    }
+    .results-container {
+        max-width: 100%;
+    }
+
+}
+
+
+
+
+.nav-logoff {
+    font-weight: bold;
+}
+
+
+
+.nav-login {
+    color: #000;
+    font-weight: bold;
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: #fff;
+}
+
+.nav-login:hover {
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+}
+
+
+
+
+.gray-field {
+    background-color: #f8f9fa;
+    border-color: #ced4da;
+    color: #212529;
+  }
+  
+  .btn-black {
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+  }
+  
+  .btn-dark-green {
+    background-color: #17575E;
+    color: #fff;
+    float: right;
+  }
+  
+  .w-1-3 {
+    width: 33.33%;
+  }
+
+
+  .search-row {
+    display: flex;
+    align-items: center;
+}
+
+
+.SearchButton button {
+    border-radius: 30px;
+    border: 2px solid #000;
+    background-color: #fff;
+    color: #000;
+    padding: 5px 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, border 0.3s ease;
+}
+
+
+.SearchButton button:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+#dropzone {
+    width: 500px;
+    height: 400px;
+    border: 2px dashed #150303;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    margin: 0 auto;
+    transition: box-shadow 0.3s ease, border 0.3s ease;
+    color: #8e8e8e;
+    border-radius: 5%;
+    margin-top: 40px;
+}
+
+#dropzone.dragover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid #000;
+}
+
+.FileUploadTitle{
+    text-align: center;
+}
+
+
+.content-wrapper {
+    position: relative;
+  }
+
+  .upload-link {
+    color: black;
+    text-decoration: none;
+    position: absolute;
+    left: 0;
+    bottom: -2em;
+    margin: 0 auto;
+  }
+  
+  .upload-link:hover {
+    color: #8e8e8e;
+  }
+  
+  .upload-link-relative {
+    position: relative;
+    top: 1em;
+    left: 0;
+  }
+  
